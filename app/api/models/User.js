@@ -7,22 +7,21 @@
 
 module.exports = {
 
+  schema:true,
+
   attributes: {
-  	// schema: true,
   	firstName:{
   		type: 'string',
   		required: true
   	},
   	lastName:{
   		type: 'string',
-  		required: true
-  	},
-  	middleName:{
-  		type: 'string',
   		required: false
   	},
-  	title:{
-  		type: 'string'
+  	gender:{
+  		type: 'string',
+      enum: ['male', 'female', 'other'],
+      required: false
   	},
   	email:{
   		type: 'string',
@@ -42,5 +41,6 @@ module.exports = {
   		return obj;
   	}
   }
+
 };
 
