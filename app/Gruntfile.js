@@ -16,21 +16,6 @@ module.exports = function(grunt) {
 
 	// Client-side javascript files to inject in order
 	// (uses Grunt-style wildcard/glob/splat expressions)
-	var jsFilesToInject = [
-
-	  // Load sails.io before everything else
-	  'js/dependencies/sails.io.js',
-	  // load jquery before bootstrap
-	  'js/dependencies/jquery-1.11.3.min.js',
-
-	  // Dependencies like jQuery, or Angular are brought in here
-	  'js/dependencies/**/*.js',
-
-	  // All of the rest of your client-side js files
-	  // will be injected here in no particular order.
-	  'js/**/*.js'
-	];
-
 	// Load the include-all library in order to require all of our grunt
 	// configurations and task registrations dynamically.
 	var includeAll;

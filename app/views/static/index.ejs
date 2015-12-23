@@ -1,8 +1,74 @@
 <div class="container">
 	<div class="jumbotron">
-		<h1>Shelfie</h1>
+		<div class="form-group">
+		    <label for="inputdefault">Search books</label>
+		    <input class="form-control" id="inputdefault" type="text">
+		</div>
+		<!-- Sign Up Modal -->
+		<div id="signUp" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
 
-		<h2>Here we go!</h2>
-		<a href="/user/new" class="btn btn-lg btn-success">Sign up</a>
+		    <!-- SignUp Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Modal Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form action="/user/create" method="POST" class="form-signup">
+					<h2 class="form-signup-heading">Create an account</h2>
+					<select class="form-control title" name="title">
+					    <option value="Mr.">Mr.</option>
+					    <option value="Mrs.">Mrs.</option>
+					    <option value="Ms.">Ms.</option>
+					</select>
+					<input type="text" class="form-control" placeholder="Your First Name" name="firstName">
+
+					<input type="text" class="form-control" placeholder="Your Middle Name" name="middleName">
+
+					<input type="text" class="form-control" placeholder="Your Last Name" name="lastName">
+
+					<input type="text" class="form-control" placeholder="Your Email" name="email">
+
+					<input type="password" class="form-control" placeholder="Your Password" name="password">
+
+					<input type="password" class="form-control" placeholder="Re-enter your Password" name="confirmation">
+
+					<br />
+
+					<input type="submit" class="btn btn-lg btn-primary btn-block" value="Create account" />
+					<input type="hidden" name="_csrf" value="<%= _csrf%>" />
+				</form>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
+		<div id="login" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Login Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Modal Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form action="/user/create" method="POST" class="form-login">
+					<h2 class="form-login-heading">Enter your details</h2>
+					<input type="text" class="form-control" placeholder="Your Email" name="email">
+
+					<input type="password" class="form-control" placeholder="Your Password" name="password">
+
+					<br />
+
+					<input type="submit" class="btn btn-lg btn-primary btn-block" value="Log In" />
+					<input type="hidden" name="_csrf" value="<%= _csrf%>" />
+				</form>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
 	</div>
 </div>

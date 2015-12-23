@@ -29,12 +29,36 @@
     -->
 
     <!--STYLES-->
-    
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Shelfie</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-toggle="modal" data-target="#signUp"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>
+            <li><a data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span>&nbsp;Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <%- body %>
+
+    <div class="container">
+      <hr>
+      <footer class="footer">
+        <div class="footer pull-right">
+          <a href="http://sailsjs.com">Sails.js</a>
+          <div>Made by Samarth, Shivam, Shivangshu and Dipankar</div>
+        </div>
+      </footer>
+    </div>
 
     <!--
         Client-side Templates
@@ -58,6 +82,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
     <!--
 
@@ -83,6 +108,9 @@
     -->
 
     <!--SCRIPTS-->
+    <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/dependencies/jquery-1.11.3.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

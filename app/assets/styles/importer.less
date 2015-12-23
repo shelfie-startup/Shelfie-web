@@ -13,21 +13,19 @@
  * always omit, customize, or replace this behavior with SASS, SCSS,
  * or any other Grunt tasks you like.)
  */
+/*<-------COLORS--------->*/
+@white: #FFFFFF;
+@green: #9EC03B;
+@orange: #F48744;
+@blue: #189ECA;
+@gray: #777574;
+@lightGray: #ECECEC;
+@black: #1C1C1C;
+@darkBlue: #106E8D;
+@darkGray: #4A4A4A;
+@red: #D16565;
 
-
-
-// For example:
-//
-// @import 'variables/colors.less';
-// @import 'mixins/foo.less';
-// @import 'mixins/bar.less';
-// @import 'mixins/baz.less';
-//
-// @import 'styleguide.less';
-// @import 'pages/login.less';
-// @import 'pages/signup.less';
-//
-// etc.
+/*<---------------------->*/
 
 body{
 	padding-top: 60px;
@@ -46,3 +44,72 @@ body{
 	font-weight: normal;
 	color: gray;
 }
+
+.container{
+	.footer{
+		width: 75%;
+	}
+}
+
+.form-signup{
+	max-width: 60%;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	margin-top: 20px;
+	background-color: @lightGray;
+	border: 1px solid @green;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	h2{
+		text-align: center;
+		margin-top: 0px;
+	}
+}
+.form-login{
+	max-width: 60%;
+	padding: 19px 29px 29px;
+	margin: 0 auto 20px;
+	margin-top: 20px;
+	background-color: @lightGray;
+	border: 1px solid @green;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	h2{
+		text-align: center;
+		margin-top: 0px;
+	}
+}
+.title{
+	max-width: 25%;
+	margin-bottom: 15px;
+}
+.form-signup input[type="text"],
+.form-signup input[type="password"]{
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+.form-login input[type="text"],
+.form-login input[type="password"]{
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+
+// For example:
+//
+// @import 'variables/colors.less';
+// @import 'mixins/foo.less';
+// @import 'mixins/bar.less';
+// @import 'mixins/baz.less';
+//
+// @import 'styleguide.less';
+// @import 'pages/login.less';
+// @import 'pages/signup.less';
+//
+// etc.
+
