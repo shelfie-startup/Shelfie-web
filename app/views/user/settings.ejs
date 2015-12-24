@@ -1,0 +1,92 @@
+<div class="col-md-2">
+    <h2>Settings</h2>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#tab_personalInformation" data-toggle="pill">Personal Information</a></li>
+        <li><a href="#tab_changePassword" data-toggle="pill">Change Password</a></li>
+        <li><a href="#tab_addresses" data-toggle="pill">Addresses</a></li>
+        <li><a href="#tab_profileSettings" data-toggle="pill">Profile Settings</a></li>
+        <li><a href="#tab_deactivateAccount" data-toggle="pill">Deactivate Account</a></li>
+    </ul>
+</div>
+<div class="tab-content col-md-10">
+    <div class="tab-pane active" id="tab_personalInformation">
+        <div>
+            <h1>Personal Information</h1></div>
+        <div>
+            <div>
+                <form>
+                    <div></div>
+                    <div>
+                        <div>First Name</div>
+                        <div>
+                            <input id="first_name" type="text" /> </div>
+                    </div>
+                    <div>
+                        <div>Last Name</div>
+                        <div>
+                            <input id="last_name" type="text" /> </div>
+                    </div>
+                    <div>
+                        <div>Gender</div>
+                        <div>
+                            <select id="gender">
+                                <option value="Female">Male</option>
+                                <option value="Male">Female</option>
+                                <option value="Male">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div>&nbsp;</div>
+                        <div>
+                            <button type="submit">Save Changes</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="tab_changePassword">
+        <div>
+            <div>
+                <h1>Change Password</h1></div>
+            <div>
+                <div>
+                    <form>
+                        <div></div>
+                        <div>
+                            <div>Old Password</div>
+                            <div>
+                                <input id="old_password" type="password" /> </div>
+                        </div>
+                        <div>
+                            <div>New Password</div>
+                            <div>
+                                <input id="new_password" type="password" /> </div>
+                        </div>
+                        <div>
+                            <div>Retype New Password</div>
+                            <div>
+                                <input id="new_password_repeat" type="password" /> </div>
+                        </div>
+                        <div>
+                            <div>&nbsp;</div>
+                            <div>
+                                <button type="submit">Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="tab_addresses">
+        <h1>Add a New Address</h1>
+    </div>
+    <div class="tab-pane" id="tab_profileSettings">
+        <h1>Profile Settings</h1>
+    </div>
+    <div class="tab-pane" id="tab_deactivateAccount">
+        <h1>Deactivate Account</h1>
+    </div>
+</div>
